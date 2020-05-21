@@ -9,6 +9,6 @@ def home_view():
     return "<h1>Hello World</h1>"
 
 
-@app.route("/rabobank/fetchaccounts", methods=['POST'])
+@app.route("/rabobank/fetchaccounts")
 def fetch_rabobank_accounts():
     return rabobank_service.fetch_accounts();
